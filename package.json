@@ -1,0 +1,22 @@
+{
+  "name": "youtube-transcript-downloader",
+  "version": "1.0.0",
+  "description": "A web application to download YouTube video transcripts",
+  "main": "src/api/youtube-api.js",
+  "scripts": {
+    "start": "node src/api/youtube-api.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "youtube",
+    "transcript",
+    "download",
+    "captions"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "youtube-transcript": "^1.0.6"
+  }
+} 

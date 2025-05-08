@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Transcript Downloader</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-youtube"></i>
+                <span>Transcript Tool</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#use-cases">Use Cases</a></li>
+                    <li><a href="#how-to">How To</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transform YouTube Videos Into Text</h1>
+                <p class="subtitle">Get accurate, time-stamped transcripts from any YouTube video in seconds</p>
+                <a href="#transcript-tool" class="cta-button">Get Started <i class="fas fa-arrow-down"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="/images/youtube.png" alt="YouTube Transcript Tool" class="youtube-png">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Use Our Transcript Tool?</h2>
+                <p>Powerful features to help you get the most from YouTube videos</p>
+            </div>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Simple & Fast</h3>
+                    <p>Get transcripts with just a click, no sign-up required</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-download"></i>
+                    <h3>Easy Download</h3>
+                    <p>Download transcripts as text files for offline use</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Time-Stamped</h3>
+                    <p>All transcripts include timestamps for easy navigation</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-language"></i>
+                    <h3>Multi-Language</h3>
+                    <p>Works with transcripts in any language YouTube supports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="use-cases" class="use-cases-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Use Cases</h2>
+                <p>See how others are using our transcript tool</p>
+            </div>
+            <div class="use-cases-container">
+                <div class="use-case-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h3>Academic Research</h3>
+                        <p>Quickly extract information from educational videos for research papers or study notes. Search through lecture content without rewatching hours of video.</p>
+                    </div>
+                </div>
+                <div class="use-case-item">
+                    <i class="fas fa-language"></i>
+                    <div>
+                        <h3>Language Learning</h3>
+                        <p>Study dialogue from videos in foreign languages to improve comprehension. Read along while watching to enhance your understanding and pronunciation.</p>
+                    </div>
+                </div>
+                <div class="use-case-item">
+                    <i class="fas fa-universal-access"></i>
+                    <div>
+                        <h3>Accessibility</h3>
+                        <p>Access content in text form for those who prefer reading to watching videos. Make YouTube content accessible to people with hearing impairments.</p>
+                    </div>
+                </div>
+                <div class="use-case-item">
+                    <i class="fas fa-search"></i>
+                    <div>
+                        <h3>Content Analysis</h3>
+                        <p>Search through transcripts to find specific information without watching entire videos. Perfect for journalists, researchers, and content creators.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to" class="how-to-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How To Use</h2>
+                <p>Follow these simple steps to get your transcript</p>
+            </div>
+            <div class="how-to-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Find a YouTube Video</h3>
+                        <p>Go to YouTube and find the video you want the transcript for</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Copy the URL</h3>
+                        <p>Copy the full YouTube video URL from your browser's address bar</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Paste & Generate</h3>
+                        <p>Paste the URL into the input field below and click "Generate Transcript"</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Download or View</h3>
+                        <p>View the transcript directly on this page or download it as a text file</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="transcript-tool" class="tool-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Generate Your Transcript</h2>
+                <p>Paste any YouTube video URL and click generate</p>
+            </div>
+            <form id="transcript-form">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="video-url" 
+                        placeholder="Paste YouTube video URL here" 
+                        required
+                    >
+                    <button type="submit" id="submit-btn"><i class="fas fa-wand-magic-sparkles"></i> Generate Transcript</button>
+                </div>
+            </form>
+            
+            <div id="loading" class="hidden">
+                <div class="loader"></div>
+                <p>Fetching transcript...</p>
+            </div>
+
+            <div id="error-message" class="hidden">
+                <p><i class="fas fa-exclamation-circle"></i> An error occurred. Please check the URL and try again.</p>
+            </div>
+
+            <div id="result-container" class="result-section hidden">
+                <div class="result-header">
+                    <h2><i class="fas fa-file-alt"></i> Transcript</h2>
+                    <button id="download-btn"><i class="fas fa-download"></i> Download as Text</button>
+                </div>
+                <div id="transcript-content"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Users Say</h2>
+                <p>Join thousands of satisfied users who save time with our tool</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"This tool has been a game changer for my research. I can quickly extract information from hours of lecture videos."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50x50" alt="User">
+                        <div>
+                            <h4>Avnish Singh</h4>
+                            <p>PhD Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As someone learning English, being able to read along with videos has dramatically improved my comprehension."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50x50" alt="User">
+                        <div>
+                            <h4>Himanshu Tiwari</h4>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I use this tool daily for content research. It helps me find exactly what I need without watching entire videos."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50x50" alt="User">
+                        <div>
+                            <h4>Sunidhi Singh</h4>
+                            <p>Content Creator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fab fa-youtube"></i>
+                    <span>Transcript Tool</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Tool</h3>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#use-cases">Use Cases</a></li>
+                            <li><a href="#how-to">How To Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">API Documentation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Connect</h3>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 YouTube Transcript Tool | <i class="fas fa-code"></i> with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/components/app.js"></script>
+    <script src="test-script.js"></script>
+</body>
+</html> 
